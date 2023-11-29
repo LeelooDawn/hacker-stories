@@ -1,7 +1,7 @@
 import * as React from "react";
 import axios from "axios";
 import styles from "./App.module.css";
-import check from "./accepted.png";
+import check from "./check.png";
 
 const useStorageState = (key, initialState) => {
   const [value, setValue] = React.useState(
@@ -49,6 +49,7 @@ const storiesReducer = (state, action) => {
       throw new Error();
   }
 };
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useStorageState("search", "React");
   const [url, setUrl] = React.useState(`${API_ENDPOINT}${searchTerm}`);

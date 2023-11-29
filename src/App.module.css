@@ -32,6 +32,7 @@
 
 .button {
   background: transparent;
+  border: 1px solid #171212;
   padding: 3px;
   cursor: pointer;
   transition: all 0.1s ease-in;
@@ -48,7 +49,6 @@
 
 .buttonLarge {
   padding: 10px;
-  border: 1px solid #171212;
 }
 
 .searchForm {
